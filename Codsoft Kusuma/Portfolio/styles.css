@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #e74c3c;
+  --text-dark: #2c3e50;
+  --text-light: #ecf0f1;
+  --background-light: #f4f4f4;
+  --background-dark: #ffffff;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: var(--background-dark);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo a:hover {
+  color: var(--secondary-color);
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin-right: 1rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.hire__me:hover {
+  background-color: var(--secondary-color);
+}
+
+.portfolio {
+  background-color: var(--background-dark);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.image {
+  width: 48%;
+}
+
+.image img {
+  width: 70%;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.skills,
+.projects,
+.contact,
+.resume {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2,
+.projects h2,
+.contact h2,
+.resume h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.skills ul,
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li,
+.projects li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects p,
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 0.5rem;
+}
+
+.resume p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.resume a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.resume a:hover {
+  color: var(--secondary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Add more sections and styling as needed */
